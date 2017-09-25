@@ -1,1 +1,3 @@
 # ImageCarousel
+ - 利用UICollectionView，设置两组图片，第次滑动到第一个时，在UICollectionViewDelegate代理方法中将contentOffset调整到第二组图片的第一个，第一滑动到最后一个时，将contentOffset设置到第一组的最后一个图片。
+ - 如果快速滑动时，每次重新设置contentOffset时会卡一下，解决问题是将图片的组数设置大一点，因为CollectionView中的cell会重新复用，所以不会造成过多的内存开销
